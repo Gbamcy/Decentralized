@@ -37,7 +37,7 @@ Route::get('/dashboard', function () {
 
 Auth::routes();
 
-//post announcement route(admin)
+
 
 // crud routes
 Route::get('posts', [PostController::class, 'index'])->name('posts.index');
