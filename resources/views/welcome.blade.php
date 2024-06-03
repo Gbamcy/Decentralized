@@ -11,7 +11,7 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-6 text-center">
-                        <h2 data-aos="fade-down"> <span>Welcome to<br>Rhema Salvation</span></h2>
+                        <h2 data-aos="fade-down"> <span> Welcome to <br> Rhema Salvation</span></h2>
                         <p data-aos="fade-up">We believe that the Bible is the inspired word of God and our guide for daily living and are eager to share this good news with others.</p>
                         <a data-aos="fade-up" data-aos-delay="200" href="#get-started" class="btn-get-started">Get Started</a>
                     </div>
@@ -97,7 +97,7 @@
                             <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
                                 <h3>Baptism</h3>
                                 <p class="fst-italic">
-                                    Join our fellowship and be baptize.
+                                    Join our fellowship and be Baptize.
                                 </p>
 
                             </div>
