@@ -1,7 +1,11 @@
-@extends('layouts.master')
+@extends('layouts.auth')
+@section('title','register page')
 @section('content')
+    <div style="margin: 10px">
+        <i class="fas fa-home"></i><a href="{{url('/')}}" style="">Home</a>
+    </div>
     <div class="container-fluid">
-        <div class="row justify-content-center bg-white">
+        <div class="row justify-content-center bg-white ">
             <div class="col-md-4  mt-2 mb-3">
                 <!-- Default form register -->
                 <div class="card">
@@ -61,8 +65,7 @@
 
                             <!-- Sign up button -->
                             <button class="btn btn-info my-4 btn-block" type="submit">Sign up</button>
-                            <p>Already have an account.? <a href="{{route('login')}}"> Sign in </a> By signing up
-                                you agreed to our <a href="{{url('terms')}}">Terms</a>
+                            <p>Already have an account.? <a href="{{route('login')}}"> Sign in </a>
                             </p>
 
                             <hr>

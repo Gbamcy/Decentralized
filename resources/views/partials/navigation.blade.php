@@ -1,4 +1,3 @@
-<!-- ======= Header ======= -->
 <header id="header" class="header d-flex align-items-center">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
@@ -21,13 +20,12 @@
                             aria-label="Search"
                             aria-describedby="search-addon"
                         />
-                           <span class="input-group-text border-0" id="search-addon">
+                        <span class="input-group-text border-0" id="search-addon">
                             <i class="fas fa-search"></i>
                            </span>
                     </form>
 
                 </li>
-
                 <li><a href="{{url('/')}}" class="active">Home</a></li>
                 <li><a href="{{url('/about')}}">About</a></li>
                 <li><a href="{{url('/gallery')}}">Gallery</a></li>
@@ -42,7 +40,6 @@
                                 <li><a href="{{url('/donation')}}">Donation</a></li>
                                 <li><a href="{{url('/posts')}}">Announcement</a></li>
                                 <li><a href="{{('/donation')}}">Church Projects</a></li>
-
                             </ul>
                         </li>
                         <li><a href="{{url('/template')}}">Live stream</a></li>
@@ -51,17 +48,32 @@
                     </ul>
                 </li>
                 <li><a href="{{url('/contact')}}">Contact</a></li>
-                @if(Auth::check())
-                    <li>
-                        <form id="logout-form" action="{{route('logout')}}" method="POST" class="d-none">@csrf</form>
-                        <a class="dropdown-item" href="{{url('logout')}}" onclick="event.preventDefault(); document.getElementById('logout-form').submit()">Logout</a>
-
-                    </li>
+                @guest
+                    @if (Route::has('login'))
+                        <li class="scroll-to-section">
+                            <a  href="{{ route('login') }}">{{ __('Login') }}</a>
+                        </li>
+                    @endif
 
                 @else
-                    <li><a href="{{url('/login')}}">Login</a></li>
+                    <li class=" dropdown">
+                        <a  class=" dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                            {{ Auth::user()->name }}
+                        </a>
 
-                @endif
+                        <div class=" dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown" style="background-color: #7a6ad8">
+                            <a class="  dropdown-item" style="background-color: #7a6ad8; text-align: center" href="{{ route('logout') }}"
+                               onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                {{ __('Logout') }}
+                            </a>
+
+                            <form  id="logout-form" action="{{ route('logout') }}" method="POST" class=" d-none">
+                                @csrf
+                            </form>
+                        </div>
+                    </li>
+                @endguest
 
 
             </ul>
@@ -70,6 +82,7 @@
 
     </div>
 </header> <!=====end header============>
+
 
 
 

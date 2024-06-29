@@ -19,26 +19,13 @@
         <div class="container" data-aos="fade-up">
 
             <div class="row position-relative">
-
                 <div class="col-lg-7 about-img" style="background-image: url(assets/img/media.jpg);"></div>
-
                 <div class="col-lg-7">
                     <h2>Sermon</h2>
                     <div class="our-story">
-
-                        <h3>Video and Audio Sermons</h3>
-
+                        <h3>Video sermon</h3>
                         <div class="watch-video d-flex align-items-center position-relative">
-                            <i class="bi bi-play-circle"></i>
-                            <a href="https://youtu.be/wGusCVECtzs" class="download">Play Audio</a>
-
-                        </div>
-
-                        <br>
-
-                        <div class="watch-video d-flex align-items-center position-relative">
-                            <i class="bi bi-play-circle"></i>
-                            <a href="https://youtu.be/ZsIcsPRjE-A?si=3msGngv9Bjn97qz2" class="download">Watch Video</a>
+                            <iframe width="420" height="315" src="//www.youtube.com/embed/ZsIcsPRjE-A?si=3msGngv9Bjn97qz2" frameborder="0" allowfullscreen></iframe>
                         </div>
 
                     </div>

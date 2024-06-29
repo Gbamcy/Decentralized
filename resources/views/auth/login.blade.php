@@ -1,6 +1,9 @@
-@extends('layouts.master')
-
+@extends('layouts.auth')
+@section('title','login')
 @section('content')
+    <div style="margin: 10px">
+        <i class="fas fa-home"></i><a href="{{url('/')}}" style="">Home</a>
+    </div>
     <main class="d-flex w-100 mb-3">
         <div class="container d-flex flex-column">
             <div class="row vh-100">
